@@ -1,0 +1,13 @@
+{
+  "name": "next-linaria-plugin",
+  "version": "0.1.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": ["next-linaria-plugin"],
+  "main": "next_linaria_plugin.wasm",
+  "scripts": {
+    "prepack": "cargo build --release -p next_linaria_plugin --target wasm32-wasi && cp ./target/wasm32-wasi/release/next_linaria_plugin.wasm ."
+  },
+  "preferUnplugged": true
+}
